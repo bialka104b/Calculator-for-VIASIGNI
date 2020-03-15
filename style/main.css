@@ -1,4 +1,15 @@
 body {
   color: green;
+  background-image: url(../images/dark-grey-terrazzo/dark-grey-terrazzo/dark-grey-terrazzo.png);
+}
+
+.calculator {
+  /*section.calculator*/
+  background: white;
+}
+
+.tab-content {
+  height: auto;
+  background: yellow;
 }
 /*# sourceMappingURL=main.css.map */
