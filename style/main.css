@@ -12,4 +12,11 @@ body {
   height: auto;
   background: yellow;
 }
+
+.tab-content img {
+  display: block;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
 /*# sourceMappingURL=main.css.map */
