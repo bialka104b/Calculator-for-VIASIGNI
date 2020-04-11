@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Kalkulator malowania pasów</title>
+
+    <!-- qKLEJONE -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#db5945">
+    <link rel="stylesheet" href="css/west.css" type="text/css" />
+    <link rel="shortcut icon" href="image/logo1.png">
+    <!--BOOTSTRAP  https://codepen.io/arturkot/pen/b9d87ceda60c86ca9575033e84278d57-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--FONT AWESOME-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+    <script type="text/babel" src="script/appachivement.js"></script>
+    <script type="text/babel" src="script/app.js"></script> <!-- babel -->
+    <!-- do tąd wklejone -->
+
     <!--BOOTSTRAP  https://codepen.io/arturkot/pen/b9d87ceda60c86ca9575033e84278d57-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -13,6 +36,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
+    <script src="script/script.js"></script>
+
+
 </head>
 
 <body>
@@ -21,1085 +48,1078 @@
         <p>Kalkulator przelicza metry bierzące na metry kwadratowe</p>
     </header>
 
-    <main class="row">
-        <aside class="result col-md-2">
-            <div>
-                dddd
-            </div>
-        </aside>
-        <section class="calculator col-md-10">
-            <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="kalk1-tab" data-toggle="tab" href="#kalk1" role="tab"
-                            aria-controls="kalk1" aria-selected="true">
-                            P-1a<br>
-                            P-1b<br>
-                            P-1c
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk2-tab" data-toggle="tab" href="#kalk2" role="tab"
-                            aria-controls="kalk2" aria-selected="false">
-                            P-1d <br>
-                            P-1e <br>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk3-tab" data-toggle="tab" href="#kalk3" role="tab"
-                            aria-controls="kalk3" aria-selected="false">
-                            P-2a <br>
-                            P-2b <br>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk4-tab" data-toggle="tab" href="#kalk4" role="tab"
-                            aria-controls="kalk4" aria-selected="false">
-                            P-3a <br>
-                            P-3b <br>
-                            P-4
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk5-tab" data-toggle="tab" href="#kalk5" role="tab"
-                            aria-controls="kalk5" aria-selected="false">
-                            P-5 <br>
-                            P-6 <br>
-                            P-6a
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk6-tab" data-toggle="tab" href="#kalk6" role="tab"
-                            aria-controls="kalk6" aria-selected="false">
-                            P-7a <br>
-                            P-7b <br>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk7-tab" data-toggle="tab" href="#kalk7" role="tab"
-                            aria-controls="kalk7" aria-selected="false">
-                            P-7c <br>
-                            P-7d <br>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk8-tab" data-toggle="tab" href="#kalk8" role="tab"
-                            aria-controls="kalk8" aria-selected="false">
-                            P-8a <br>
-                            P-8b <br>
-                            P-8c
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk9-tab" data-toggle="tab" href="#kalk9" role="tab"
-                            aria-controls="kalk9" aria-selected="false">
-                            P-8e <br>
-                            P-8f <br>
-                            P-8g
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk10-tab" data-toggle="tab" href="#kalk10" role="tab"
-                            aria-controls="kalk10" aria-selected="false">
-                            P-8h <br>
-                            P-8i <br>
-                            P-9a i 9b
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" id="kalk11-tab" data-toggle="tab" href="#kalk11" role="tab"
-                            aria-controls="kalk11" aria-selected="true">
+    <main class="container-fluid">
+        <div class="row divInMain">
+            <!-- <section class="result col-md-2">
+                <div>
+                    dddd
+                </div>
+            </section> -->
+            <section class="calculator col-md-12">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="kalk1-tab" data-toggle="tab" href="#kalk1" role="tab"
+                                aria-controls="kalk1" aria-selected="true">
+                                P-1a<br>
+                                P-1b<br>
+                                P-1c
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk2-tab" data-toggle="tab" href="#kalk2" role="tab"
+                                aria-controls="kalk2" aria-selected="false">
+                                P-1d <br>
+                                P-1e <br>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk3-tab" data-toggle="tab" href="#kalk3" role="tab"
+                                aria-controls="kalk3" aria-selected="false">
+                                P-2a <br>
+                                P-2b <br>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk4-tab" data-toggle="tab" href="#kalk4" role="tab"
+                                aria-controls="kalk4" aria-selected="false">
+                                P-3a <br>
+                                P-3b <br>
+                                P-4
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk5-tab" data-toggle="tab" href="#kalk5" role="tab"
+                                aria-controls="kalk5" aria-selected="false">
+                                P-5 <br>
+                                P-6 <br>
+                                P-6a
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk6-tab" data-toggle="tab" href="#kalk6" role="tab"
+                                aria-controls="kalk6" aria-selected="false">
+                                P-7a <br>
+                                P-7b <br>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk7-tab" data-toggle="tab" href="#kalk7" role="tab"
+                                aria-controls="kalk7" aria-selected="false">
+                                P-7c <br>
+                                P-7d <br>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk8-tab" data-toggle="tab" href="#kalk8" role="tab"
+                                aria-controls="kalk8" aria-selected="false">
+                                P-8a <br>
+                                P-8b <br>
+                                P-8c
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk9-tab" data-toggle="tab" href="#kalk9" role="tab"
+                                aria-controls="kalk9" aria-selected="false">
+                                P-8e <br>
+                                P-8f <br>
+                                P-8g
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk10-tab" data-toggle="tab" href="#kalk10" role="tab"
+                                aria-controls="kalk10" aria-selected="false">
+                                P-8h <br>
+                                P-8i <br>
+                                P-9a i 9b
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" id="kalk11-tab" data-toggle="tab" href="#kalk11" role="tab"
+                                aria-controls="kalk11" aria-selected="true">
+                                P-9a <br>
+                                P-9b <br>
+                            </a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk12-tab" data-toggle="tab" href="#kalk12" role="tab"
+                                aria-controls="kalk12" aria-selected="false">
+                                P-10 <br>
+                                P-11 <br>
+                                P-12
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk13-tab" data-toggle="tab" href="#kalk13" role="tab"
+                                aria-controls="kalk13" aria-selected="false">
+                                P-13<br>
+                                P-14<br>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk14-tab" data-toggle="tab" href="#kalk14" role="tab"
+                                aria-controls="kalk14" aria-selected="false">
+                                P-15 <br>
+                                P-16 <br>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk15-tab" data-toggle="tab" href="#kalk15" role="tab"
+                                aria-controls="kalk15" aria-selected="false">
+                                P-17 <br>
+                                P-18 <br>
+                                P-19
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk16-tab" data-toggle="tab" href="#kalk16" role="tab"
+                                aria-controls="kalk16" aria-selected="false">
+                                P-20 <br>
+                                P-20 <br>
+                                P-21
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk17-tab" data-toggle="tab" href="#kalk17" role="tab"
+                                aria-controls="kalk17" aria-selected="false">
+                                P-22 <br>
+                                P-23 <br>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk18-tab" data-toggle="tab" href="#kalk18" role="tab"
+                                aria-controls="kalk18" aria-selected="false">
+                                P-24 <br>
+                                P-25 <br>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" id="kalk19-tab" href="#kalk19" data-toggle="tab" role="tab"
+                                aria-controls="kalk19" aria-selected="false">
+                                P-8i <br>
+                                P-9a <br>
+                                P-9b
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="kalk20-tab" data-toggle="tab" href="#kalk20" role="tab"
+                                aria-controls="kalk20" aria-selected="false">
+                                P-10 <br>
+                                P-11 <br>
+                                P-12
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+
+                <div class="card-body">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane show active" id="kalk1" role="tabpanel" aria-labelledby="kalk1-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-1a</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-1a.jpg" alt="Znak P-1a">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="p1a-add-sum">0.04 x</span>
+                                            <input id="p1a" type="number" min="0" value="0">
+                                            <span id="dodajP1a">
+                                                wynik: 0
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-1b</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-1b.jpg" alt="Znak P-1b">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">0.04 x</span>
+                                            <input id="p1b" type="number" min="0" value="0">
+                                            <span id="dodajP1b">
+                                                wynik: 0
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-1c</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-1c.jpg" alt="Znak P-1c">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">0.12 x</span>
+                                            <input id="p1c" type="number" min="0" value="0">
+                                            <span id="dodajP1c">
+                                                wynik: 0
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- TU JEST SZABLON PUSTY DO ZNAKÓW -->
+                        <div class="tab-pane" id="kalk2" role="tabpanel" aria-labelledby="kalk2-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-1d</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-1d.jpg" alt="Znak P-1d">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">0.06 x</span>
+                                            <input id="p1d" type="number" min="0" value="0">
+                                            <span id="dodajP1d">wynik: 0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-1e</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-1e.jpg" alt="Znak P-1e">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">0.12 x</span>
+                                            <input id="p1e" type="number" min="0" value="0">
+                                            <span id="dodajP1e">wynik: 0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>nazwa znaku</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="" alt="">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="kalk3" role="tabpanel" aria-labelledby="kalk3-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-2a</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-2a.jpg" alt="Znak P-2a">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">0.12 x</span>
+                                            <input id="p2a" type="number" min="0" value="0">
+                                            <span id="dodajP2a">wynik: 0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-2b</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-2b.jpg" alt="Znak P-2b">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">0.24 x</span>
+                                            <input id="p2b" type="number" min="0" value="0">
+                                            <span id="dodajP2b">wynik: 0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>nazwa znaku</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="" alt="">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="kalk4" role="tabpanel" aria-labelledby="kalk4-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-3a</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-3a.jpg" alt="Znak P-3a">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">0.20 x</span>
+                                            <input id="p3a" type="number" min="0" value="0">
+                                            <span id="dodajP3a">wynik: 0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-3b</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-3b.jpg" alt="Znak P-3b">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">0.18 x</span>
+                                            <input id="p3b" type="number" min="0" value="0">
+                                            <span id="dodajP3b">wynik: 0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-4</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-4.jpg" alt="Znak P-4">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">0.24 x</span>
+                                            <input id="p4" type="number" min="0" value="0">
+                                            <span id="dodajP4">wynik: 0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="kalk5" role="tabpanel" aria-labelledby="kalk5-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-5</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-5.jpg" alt="Znak P-5">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p5" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-6</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-6.jpg" alt="Znak P-6">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p6" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-6a</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-6a.jpg" alt="Znak P-6a">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p6a" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="kalk6" role="tabpanel" aria-labelledby="kalk6-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-7a</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-7a.jpg" alt="Znak P-7a">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p7a" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-7b</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-7b.jpg" alt="Znak P-7b">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p7b" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>nazwa znaku</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="" alt="">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="kalk7" role="tabpanel" aria-labelledby="kalk7-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-7c</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-7c.jpg" alt="Znak P-7c">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p7c" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-7d</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-7d.jpg" alt="Znak P-7d">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p7d" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>nazwa znaku</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="" alt="">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="kalk8" role="tabpanel" aria-labelledby="kalk8-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-8a krótki</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8a krotki.jpg"
+                                                alt="Znak P-8a krótki">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8a-krotki" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                    <div class="description-char">
+                                        <h2>Znak P-8a długi</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8a dlugi.jpg"
+                                                alt="Znak P-8a długi">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8a-dlugi" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-8b krótki</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8b krótki.jpg"
+                                                alt="Znak P-8b krótki">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8b-krotki" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                    <div class="description-char">
+                                        <h2>Znak P-8b długi</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8b długi.jpg"
+                                                alt="Znak P-8b długi">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8b-dlugi" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-8c</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8c.jpg" alt="Znak P-8c">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8c" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="kalk9" role="tabpanel" aria-labelledby="kalk9-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-8e krótki</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8e krótki.jpg"
+                                                alt="Znak P-8e krótki">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8e-krotki" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                    <div class="description-char">
+                                        <h2>Znak P-8e długi</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8e długi.jpg"
+                                                alt="Znak P-8e długi">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8e-dlugi" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-8f krótki</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8f krótki.jpg"
+                                                alt="Znak P-8f krótki">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8f-krotki" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                    <div class="description-char">
+                                        <h2>Znak P-8f długi</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8f długi.jpg"
+                                                alt="Znak P-8f długi">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8f-dlugi" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-8g krórki</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8g krótki.jpg"
+                                                alt="Znak P-8g krótki">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8g-krotki" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                    <div class="description-char">
+                                        <h2>Znak P-8g długi</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8g długi.jpg"
+                                                alt="Znak P-8g długi">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8g-dlugi" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="kalk10" role="tabpanel" aria-labelledby="kalk10-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-8h krótki</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8h krótki.jpg"
+                                                alt="Znak P-8h krótki">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8h-krotki" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                    <div class="description-char">
+                                        <h2>Znak P-8h długi</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8h długi.jpg"
+                                                alt="Znak P-8h długi">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8h-dlugi" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-8i</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-8i.jpg" alt="Znak P-8i">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p8i" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-9a</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-9a.jpg" alt="Znak P-9a">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p9a" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                    <div class="description-char">
+                                        <h2>Znak P-9b</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-9b.jpg" alt="Znak P-9b">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p9b" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="tab-pane" id="kalk11" role="tabpanel" aria-labelledby="kalk11-tab">
                             P-9a <br>
                             P-9b <br>
-                        </a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk12-tab" data-toggle="tab" href="#kalk12" role="tab"
-                            aria-controls="kalk12" aria-selected="false">
-                            P-10 <br>
-                            P-11 <br>
-                            P-12
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk13-tab" data-toggle="tab" href="#kalk13" role="tab"
-                            aria-controls="kalk13" aria-selected="false">
-                            P-13<br>
-                            P-14<br>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk14-tab" data-toggle="tab" href="#kalk14" role="tab"
-                            aria-controls="kalk14" aria-selected="false">
-                            P-15 <br>
-                            P-16 <br>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk15-tab" data-toggle="tab" href="#kalk15" role="tab"
-                            aria-controls="kalk15" aria-selected="false">
-                            P-17 <br>
-                            P-18 <br>
-                            P-19
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk16-tab" data-toggle="tab" href="#kalk16" role="tab"
-                            aria-controls="kalk16" aria-selected="false">
-                            P-20 <br>
-                            P-20 <br>
-                            P-21
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk17-tab" data-toggle="tab" href="#kalk17" role="tab"
-                            aria-controls="kalk17" aria-selected="false">
-                            P-22 <br>
-                            P-23 <br>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk18-tab" data-toggle="tab" href="#kalk18" role="tab"
-                            aria-controls="kalk18" aria-selected="false">
-                            P-24 <br>
-                            P-25 <br>
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" id="kalk19-tab" href="#kalk19" data-toggle="tab" role="tab"
-                            aria-controls="kalk19" aria-selected="false">
-                            P-8i <br>
-                            P-9a <br>
-                            P-9b
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="kalk20-tab" data-toggle="tab" href="#kalk20" role="tab"
-                            aria-controls="kalk20" aria-selected="false">
-                            P-10 <br>
-                            P-11 <br>
-                            P-12
-                        </a>
-                    </li> -->
-                </ul>
-            </div>
-
-            <div class="card-body">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane show active" id="kalk1" role="tabpanel" aria-labelledby="kalk1-tab">
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-1a</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-1a.jpg" alt="Znak P-1a">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p1a" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-1b</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-1b.jpg" alt="Znak P-1b">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p1b" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-1c</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-1c.jpg" alt="Znak P-1c">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p1c" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- TU JEST SZABLON PUSTY DO ZNAKÓW -->
-                    <div class="tab-pane" id="kalk2" role="tabpanel" aria-labelledby="kalk2-tab">
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-1d</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-1d.jpg" alt="Znak P-1d">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p1d" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-1e</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-1e.jpg" alt="Znak P-1e">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p1e" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>nazwa znaku</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="" alt="">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane" id="kalk3" role="tabpanel" aria-labelledby="kalk3-tab">
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-2a</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-2a.jpg" alt="Znak P-2a">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p2a" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-2b</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-2b.jpg" alt="Znak P-2b">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p2b" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>nazwa znaku</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="" alt="">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane" id="kalk4" role="tabpanel" aria-labelledby="kalk4-tab">
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-3a</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-3a.jpg" alt="Znak P-3a">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p3a" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-3b</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-3b.jpg" alt="Znak P-3b">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p3b" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-4</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-4.jpg" alt="Znak P-4">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p4" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane" id="kalk5" role="tabpanel" aria-labelledby="kalk5-tab">
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-5</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-5.jpg" alt="Znak P-5">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p5" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-6</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-6.jpg" alt="Znak P-6">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p6" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-6a</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-6a.jpg" alt="Znak P-6a">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p6a" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane" id="kalk6" role="tabpanel" aria-labelledby="kalk6-tab">
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-7a</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-7a.jpg" alt="Znak P-7a">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p7a" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-7b</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-7b.jpg" alt="Znak P-7b">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p7b" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>nazwa znaku</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="" alt="">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane" id="kalk7" role="tabpanel" aria-labelledby="kalk7-tab">
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-7c</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-7c.jpg" alt="Znak P-7c">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p7c" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-7d</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-7d.jpg" alt="Znak P-7d">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p7d" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>nazwa znaku</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="" alt="">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane" id="kalk8" role="tabpanel" aria-labelledby="kalk8-tab">
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-8a krótki</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8a krotki.jpg"
-                                            alt="Znak P-8a krótki">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8a-krotki" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h2>Znak P-8a długi</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8a dlugi.jpg"
-                                            alt="Znak P-8a długi">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8a-dlugi" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-8b krótki</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8b krótki.jpg"
-                                            alt="Znak P-8b krótki">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8b-krotki" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h2>Znak P-8b długi</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8b długi.jpg"
-                                            alt="Znak P-8b długi">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8b-dlugi" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-8c</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8c.jpg" alt="Znak P-8c">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8c" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane" id="kalk9" role="tabpanel" aria-labelledby="kalk9-tab">
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-8e krótki</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8e krótki.jpg"
-                                            alt="Znak P-8e krótki">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8e-krotki" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h2>Znak P-8e długi</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8e długi.jpg"
-                                            alt="Znak P-8e długi">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8e-dlugi" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-8f krótki</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8f krótki.jpg"
-                                            alt="Znak P-8f krótki">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8f-krotki" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h2>Znak P-8f długi</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8f długi.jpg"
-                                            alt="Znak P-8f długi">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8f-dlugi" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-8g krórki</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8g krótki.jpg"
-                                            alt="Znak P-8g krótki">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8g-krotki" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h2>Znak P-8g długi</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8g długi.jpg"
-                                            alt="Znak P-8g długi">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8g-dlugi" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane" id="kalk10" role="tabpanel" aria-labelledby="kalk10-tab">
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-8h krótki</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8h krótki.jpg"
-                                            alt="Znak P-8h krótki">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8h-krotki" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h2>Znak P-8h długi</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8h długi.jpg"
-                                            alt="Znak P-8h długi">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8h-dlugi" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-8i</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-8i.jpg" alt="Znak P-8i">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p8i" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <h2>Znak P-9a</h2>
-                                    <div class="div-img div-img-square">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-9a</h2>
                                         <img class="img-responsive" src="images/road/P-9a.jpg" alt="Znak P-9a">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p9a" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p9a" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-9b</h2>
-                                    <div class="div-img div-img-square">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-9b</h2>
                                         <img class="img-responsive" src="images/road/P-9b.jpg" alt="Znak P-9b">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p9b" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="tab-pane" id="kalk11" role="tabpanel" aria-labelledby="kalk11-tab">
-                        P-9a <br>
-                        P-9b <br>
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-9a</h2>
-                                    <img class="img-responsive" src="images/road/P-9a.jpg" alt="Znak P-9a">
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p9a" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p9b" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-9b</h2>
-                                    <img class="img-responsive" src="images/road/P-9b.jpg" alt="Znak P-9b">
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p9b" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>nazwa znaku</h2>
-                                    <img class="img-responsive" src="" alt="">
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div class="tab-pane" id="kalk12" role="tabpanel" aria-labelledby="kalk12-tab">
-                        P-10 <br>
-                        P-11 <br>
-                        P-12
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-10</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-10.jpg" alt="Znak P-10">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p10" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-11</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-11.jpg" alt="Znak P-11">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p11" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-12</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-12.jpg" alt="Znak P-12">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p12" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane" id="kalk13" role="tabpanel" aria-labelledby="kalk13-tab">
-                        P-13<br>
-                        P-14<br>
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-13</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-13.jpg" alt="Znak P-13">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p13" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-14</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-14.jpg" alt="Znak P-14">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p14" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>nazwa znaku</h2>
-                                    <div class="div-img div-img-square">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>nazwa znaku</h2>
                                         <img class="img-responsive" src="" alt="">
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="tab-pane" id="kalk12" role="tabpanel" aria-labelledby="kalk12-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-10</h2>
+                                        <div class="div-img div-img-rectangle">
+                                            <img class="img-responsive" src="images/road/P-10.jpg" alt="Znak P-10">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p10" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-11</h2>
+                                        <div class="div-img div-img-rectangle">
+                                            <img class="img-responsive" src="images/road/P-11.jpg" alt="Znak P-11">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p11" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-12</h2>
+                                        <div class="div-img div-img-rectangle">
+                                            <img class="img-responsive" src="images/road/P-12.jpg" alt="Znak P-12">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p12" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="tab-pane" id="kalk14" role="tabpanel" aria-labelledby="kalk14-tab">
-                        P-15 <br>
-                        P-16 <br>
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-15 krótki</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-15 krótki.jpg"
-                                            alt="Znak P-15 krótki">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p15-krotki" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                        <div class="tab-pane" id="kalk13" role="tabpanel" aria-labelledby="kalk13-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-13</h2>
+                                        <div class="div-img div-img-rectangle">
+                                            <img class="img-responsive" src="images/road/P-13.jpg" alt="Znak P-13">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p13" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <h2>Znak P-15 długi</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-15 długi.jpg"
-                                            alt="Znak P-15 długi">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p15-dlugi" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-16</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-16 krótki i długi.jpg"
-                                            alt="Znak P-16">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p16" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-14</h2>
+                                        <div class="div-img div-img-rectangle">
+                                            <img class="img-responsive" src="images/road/P-14.jpg" alt="Znak P-14">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p14" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>nazwa znaku</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="" alt="">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>nazwa znaku</h2>
+                                        <div class="div-img div-img-rectangle">
+                                            <img class="img-responsive" src="" alt="">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="tab-pane" id="kalk15" role="tabpanel" aria-labelledby="kalk15-tab">
-                        P-17 <br>
-                        P-18 <br>
-                        P-19
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-17</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-17.jpg" alt="Znak P-17">
+                        <div class="tab-pane" id="kalk14" role="tabpanel" aria-labelledby="kalk14-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-15 krótki</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-15 krótki.jpg"
+                                                alt="Znak P-15 krótki">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p15-krotki" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p17" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-18</h2>
-                                    <div class="div-img div-img-square">
-                                        <img class="img-responsive" src="images/road/P-18.jpg" alt="Znak P-18">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p18" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                    <div class="description-char">
+                                        <h2>Znak P-15 długi</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-15 długi.jpg"
+                                                alt="Znak P-15 długi">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p15-dlugi" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-19</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-19.jpg" alt="Znak P-19">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-16</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-16 krótki i długi.jpg"
+                                                alt="Znak P-16">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p16" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p19" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>nazwa znaku</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="" alt="">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="tab-pane" id="kalk16" role="tabpanel" aria-labelledby="kalk16-tab">
-                        P-20 <br>
-                        P-20 <br>
-                        P-21
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-20</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-20.jpg" alt="Znak P-20">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p20" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                        <div class="tab-pane" id="kalk15" role="tabpanel" aria-labelledby="kalk15-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-17</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-17.jpg" alt="Znak P-17">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p17" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-20 na chodniku</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-20 na chodniku.jpg"
-                                            alt="Znak P-20 na chodniku">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p20chodnik" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-18</h2>
+                                        <div class="div-img div-img-square">
+                                            <img class="img-responsive" src="images/road/P-18.jpg" alt="Znak P-18">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p18" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-21b</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-21b.jpg" alt="Znak P-21">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p21b" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-19</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-19.jpg" alt="Znak P-19">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p19" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="tab-pane" id="kalk17" role="tabpanel" aria-labelledby="kalk17-tab">
-                        P-22 <br>
-                        P-23 <br>
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-22</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-22.jpg" alt="Znak P-22">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p22" type="number" min="0" value="0">
-                                        <span>wynik</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-23</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-23.jpg" alt="Znak P-23">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p23" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                        <div class="tab-pane" id="kalk16" role="tabpanel" aria-labelledby="kalk16-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-20</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-20.jpg" alt="Znak P-20">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p20" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="" alt="">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-20 na chodniku</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-20 na chodniku.jpg"
+                                                alt="Znak P-20 na chodniku">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p20chodnik" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-21b</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-21b.jpg" alt="Znak P-21">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p21b" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="tab-pane" id="kalk18" role="tabpanel" aria-labelledby="kalk18-tab">
-                        P-24 <br>
-                        P-25 <br>
-                        <div class="row">
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-24</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-24.jpg" alt="Znak P-24">
+                        <div class="tab-pane" id="kalk17" role="tabpanel" aria-labelledby="kalk17-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-22</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-22.jpg" alt="Znak P-22">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p22" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p24" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-23</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-23.jpg" alt="Znak P-23">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p23" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="" alt="">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>Znak P-25</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="images/road/P-25.jpg" alt="Znak P-25">
-                                    </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="p25" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                        </div>
+
+                        <div class="tab-pane" id="kalk18" role="tabpanel" aria-labelledby="kalk18-tab">
+                            <div class="row">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-24</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-24.jpg" alt="Znak P-24">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p24" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 column-char">
-                                <div>
-                                    <h2>nazwa znaku</h2>
-                                    <div class="div-img">
-                                        <img class="img-responsive" src="" alt="">
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>Znak P-25</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="images/road/P-25.jpg" alt="Znak P-25">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="p25" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
-                                    <div class="calc-item">
-                                        <span>przelicznik</span>
-                                        <input id="" type="number" min="0" value="0">
-                                        <span>wynik</span>
+                                </div>
+                                <div class="col-md-4 column-char">
+                                    <div class="description-char">
+                                        <h2>nazwa znaku</h2>
+                                        <div class="div-img">
+                                            <img class="img-responsive" src="" alt="">
+                                        </div>
+                                        <div class="calc-item">
+                                            <span id="">przelicznik</span>
+                                            <input id="" type="number" min="0" value="0">
+                                            <span>wynik</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer>Stopka</footer>
+
+    <script src="script/script.js"></script>
 </body>
 
 </html>

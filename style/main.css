@@ -3,93 +3,116 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&family=Righteous&display=swap");
 body {
-  color: lightgrey;
+  color: #ffff00;
   background-image: url(../images/dark-grey-terrazzo/dark-grey-terrazzo/dark-grey-terrazzo.png);
   font-family: "Open Sans", sans-serif;
 }
 
 header.description-site {
   padding: 30px 0 30px 0;
-  color: #9b30ff;
-  font-family: "Righteous", cursive;
+  color: #ffff00;
+  font-family: "Bungee Inline", cursive;
   text-align: center;
-  height: 200px;
+  height: 300px;
+  font-size: 150%;
+  background: -webkit-gradient(linear, 0% 15%, 99% 100%, from(#ffff00), to(#ff0000));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-main.row {
+main {
   display: block;
   margin: 0;
 }
 
-aside.result {
-  background-color: rgba(155, 48, 255, 0.5);
-}
-
-.calculator {
-  display: block;
-  /*section.calculator*/
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
+main .divInMain {
   margin: 0;
 }
 
-.calculator .card-header {
+main .divInMain section.result {
+  background-color: rgba(255, 166, 158, 0.8);
+}
+
+main .divInMain section.calculator {
+  display: block;
+  background-color: #ffff8d;
+  margin: 0;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+main .divInMain section.calculator .card-header {
   padding: 0;
 }
 
-.calculator .card-header ul.nav {
+main .divInMain section.calculator .card-header ul.nav {
   margin: 0;
 }
 
-.calculator .card-header ul.nav li.nav-item {
+main .divInMain section.calculator .card-header ul.nav li.nav-item {
   margin-bottom: 2px;
 }
 
-.calculator .card-header ul.nav li.nav-item a {
+main .divInMain section.calculator .card-header ul.nav li.nav-item a {
   display: block;
   height: 100%;
   padding: 5px 8px;
 }
 
-.calculator .card-body {
+main .divInMain section.calculator .card-header ul.nav li.nav-item a:hover {
+  border-color: #fffff0;
+  -webkit-transition: all 1.2s ease;
+  transition: all 1.2s ease;
+  background-color: #fffff0;
+}
+
+main .divInMain section.calculator .card-header ul.nav li.nav-item .nav-link {
+  text-decoration: none;
+  color: black;
+  line-height: 18px;
+  margin-right: 4px;
+}
+
+main .divInMain section.calculator .card-header ul.nav li.nav-item .active {
+  background-color: #fffff0;
+  color: #ff0000;
+  border: none;
+}
+
+main .divInMain section.calculator .card-body {
   padding: 1.25rem 0;
 }
 
-.calculator .nav-link {
-  text-decoration: none;
-  color: lightgrey;
-  line-height: 18px;
-  margin-right: 4px;
-  border: 1px solid black;
-}
-
-.calculator .nav-link .active {
-  color: black;
-}
-
-.tab-content {
+main .divInMain section.calculator .card-body .tab-content {
   height: auto;
-  background: lightblue;
+  background-image: url(../images/dark-grey-terrazzo/dark-grey-terrazzo/dark-grey-terrazzo.png);
 }
 
-.tab-content .tab-pane div.row {
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row {
   margin: 0;
 }
 
-.tab-content .tab-pane div.row .column-char {
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char {
   padding: 0px;
 }
 
-.tab-content .tab-pane div.row .column-char div h2 {
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char div.description-char {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char div.description-char h2 {
   text-align: center;
 }
 
-.tab-content .tab-pane div.row .column-char div .div-img {
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char div.description-char .div-img {
   width: 250px;
   height: 350px;
+  margin: 5px auto;
 }
 
-.tab-content .tab-pane div.row .column-char div .div-img img {
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char div.description-char .div-img img {
   display: block;
   width: 100%;
   height: 100%;
@@ -97,31 +120,51 @@ aside.result {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
+  border: 2px solid #ffa69e;
 }
 
-.tab-content .tab-pane div.row .column-char div .div-img-square img {
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char div.description-char .div-img-square img {
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.tab-content .tab-pane div.row .column-char div img {
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char div.description-char .div-img-rectangle {
+  width: 350px;
+  height: 200px;
+}
+
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char div.description-char .div-img-rectangle img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+}
+
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char div.description-char img {
   display: block;
   width: 250px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.tab-content .tab-pane div.row .column-char div div.calc-item {
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char div.description-char div.calc-item {
   text-align: center;
 }
 
-.tab-content .tab-pane div.row .column-char div div.calc-item input {
+main .divInMain section.calculator .card-body .tab-content .tab-pane div.row .column-char div.description-char div.calc-item input {
   width: 50px;
 }
 
-.tab-content .tab-pane #kalk12 img,
-.tab-content .tab-pane #kalk13 img {
+main .divInMain section.calculator .card-body .tab-content .tab-pane #kalk12 img,
+main .divInMain section.calculator .card-body .tab-content .tab-pane #kalk13 img {
   width: 80%;
+}
+
+@media (min-width: 967px) {
+  main .divInMain {
+    padding: 0 30px;
+  }
 }
 
 footer {

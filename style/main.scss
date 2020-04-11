@@ -3,120 +3,153 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&family=Righteous&display=swap");
 body {
-  color: lightgrey;
+  color: #ffff00;
   background-image: url(../images/dark-grey-terrazzo/dark-grey-terrazzo/dark-grey-terrazzo.png);
+  //background-image: url(../images/green-goblin.png);
+  //background: #4b0082;
   // font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
 }
 // OPIS STRONY - HEADER
 header.description-site {
   padding: 30px 0 30px 0;
-  color: rgb(155, 48, 255);
+  color: #ffff00;
   // font-family: "Nosifer", cursive;
-  // font-family: "Bungee Inline", cursive;
+  font-family: "Bungee Inline", cursive;
   // font-family: "Cabin Sketch", cursive;
-  font-family: "Righteous", cursive;
+  //font-family: "Righteous", cursive;
   text-align: center;
-  height: 200px;
+  height: 300px;
+  font-size: 150%;
+  background: -webkit-gradient(
+    linear,
+    0% 15%,
+    99% 100%,
+    from(#ffff00),
+    to(#ff0000)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-main.row {
+main {
   display: block;
   margin: 0;
   // min-height: 500px;
-}
-aside.result {
-  // float: left;
-  // clear: both;
-  // width: 15%;
-  background-color: rgba(155, 48, 255, 0.5);
-}
-.calculator {
-  // sekcja kalkulatora
-  display: block;
-  // float: right;
-  // width: 85%;
-  /*section.calculator*/
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
-  margin: 0;
-  .card-header {
-    padding: 0;
-    ul.nav {
-      margin: 0;
-      li.nav-item {
-        margin-bottom: 2px;
-        a {
-          display: block;
-          height: 100%;
-          padding: 5px 8px;
-        }
-      }
+  .divInMain {
+    margin: 0;
+    section.result {
+      background-color: rgba(255, 166, 158, 0.8);
     }
-  }
-  .card-body {
-    padding: 1.25rem 0;
-  }
-  .nav-link {
-    text-decoration: none;
-    color: lightgrey;
-    line-height: 18px;
-    margin-right: 4px;
-    border: 1px solid black;
-    .active {
-      //aktywna zakładka
-      color: black;
-    }
-  }
-}
-.tab-content {
-  height: auto;
-  background: lightblue;
-  .tab-pane {
-    div.row {
-      margin: 0;
-      .column-char {
-        padding: 0px;
-        div {
-          h2 {
-            text-align: center;
-          }
-          .div-img {
-            width: 250px;
-            height: 350px;
 
-            img {
+    section.calculator {
+      // sekcja kalkulatora
+      display: block;
+      background-color: #ffff8d;
+      margin: 0;
+      padding: 15px;
+      border-radius: 3px;
+      .card-header {
+        padding: 0;
+        ul.nav {
+          margin: 0;
+          li.nav-item {
+            margin-bottom: 2px;
+            a {
               display: block;
-              width: 100%;
               height: 100%;
-              object-fit: cover;
-              object-position: bottom;
+              padding: 5px 8px;
+              &:hover {
+                border-color: #fffff0;
+                transition: all 1.2s ease;
+                background-color: #fffff0;
+              }
+            }
+            .nav-link {
+              text-decoration: none;
+              color: black;
+              line-height: 18px;
+              margin-right: 4px;
+            }
+            .active {
+              background-color: #fffff0;
+              color: #ff0000;
+              border: none;
             }
           }
-          .div-img-square {
+        }
+      }
+      .card-body {
+        padding: 1.25rem 0;
+        .tab-content {
+          height: auto;
+          //background: #fffff0;
+          background-image: url(../images/dark-grey-terrazzo/dark-grey-terrazzo/dark-grey-terrazzo.png);
+          .tab-pane {
+            div.row {
+              margin: 0;
+              .column-char {
+                padding: 0px;
+                div.description-char {
+                  padding-top: 15px;
+                  padding-bottom: 15px;
+                  h2 {
+                    text-align: center;
+                  }
+                  .div-img {
+                    width: 250px;
+                    height: 350px;
+                    margin: 5px auto;
+                    img {
+                      display: block;
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                      object-position: bottom;
+                      border: 2px solid rgba(255, 166, 158, 1);
+                    }
+                  }
+                  .div-img-square {
+                    img {
+                      object-fit: contain;
+                    }
+                  }
+                  .div-img-rectangle {
+                    width: 350px;
+                    height: 200px;
+                    img {
+                      height: 100%;
+                      object-fit: cover;
+                      object-position: right;
+                    }
+                  }
+                  img {
+                    display: block;
+                    width: 250px;
+                    margin-right: auto;
+                    margin-left: auto;
+                  }
+                  div.calc-item {
+                    text-align: center;
+                    input {
+                      width: 50px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .tab-pane #kalk12,
+          .tab-pane #kalk13 {
             img {
-              object-fit: contain;
-            }
-          }
-          img {
-            display: block;
-            width: 250px;
-            margin-right: auto;
-            margin-left: auto;
-          }
-          div.calc-item {
-            text-align: center;
-            input {
-              width: 50px;
+              width: 80%;
             }
           }
         }
       }
     }
-  }
-  .tab-pane #kalk12,
-  .tab-pane #kalk13 {
-    img {
-      width: 80%;
+    @media (min-width: 967px) {
+      padding: 0 30px;
     }
   }
 }
