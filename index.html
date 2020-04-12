@@ -8,25 +8,22 @@
     <title>Kalkulator malowania pasów</title>
 
     <!-- qKLEJONE -->
-
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#db5945">
     <link rel="stylesheet" href="css/west.css" type="text/css" />
-    <link rel="shortcut icon" href="image/logo1.png">
+    <link rel="shortcut icon" href="image/logo1.png"> -->
     <!--BOOTSTRAP  https://codepen.io/arturkot/pen/b9d87ceda60c86ca9575033e84278d57-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
     <!--FONT AWESOME-->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
-    <script type="text/babel" src="script/appachivement.js"></script>
-    <script type="text/babel" src="script/app.js"></script> <!-- babel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script> -->
     <!-- do tąd wklejone -->
 
     <!--BOOTSTRAP  https://codepen.io/arturkot/pen/b9d87ceda60c86ca9575033e84278d57-->
@@ -38,6 +35,7 @@
     <link rel="stylesheet" href="style/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/script.php"></script>
 
 
 </head>
@@ -50,11 +48,15 @@
 
     <main class="container-fluid">
         <div class="row divInMain">
-            <!-- <section class="result col-md-2">
-                <div>
-                    dddd
+            <section class="result col-md-2">
+                <form name="form" action="script.php" method="POST">
+                    <textarea id="result-text" form="form" name="wynik"></textarea>
+                    <button form="form">Zapisz plik</button>
+                </form>
+                <div id="suma">
+                    suma
                 </div>
-            </section> -->
+            </section>
             <section class="calculator col-md-12">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
@@ -301,7 +303,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -345,7 +347,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -407,7 +409,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p5" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP5">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -420,7 +422,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p6" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP6">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -433,7 +435,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p6a" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP6a">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -451,7 +453,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p7a" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP7a">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -464,7 +466,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p7b" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP7b">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -477,7 +479,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -495,7 +497,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p7c" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP7c">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -508,7 +510,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p7d" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP7d">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -521,7 +523,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -540,7 +542,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8a-krotki" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8a-krotki">wynik: 0</span>
                                         </div>
                                     </div>
                                     <div class="description-char">
@@ -552,7 +554,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8a-dlugi" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8a-dlugi">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -566,7 +568,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8b-krotki" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8b-krotki">wynik: 0</span>
                                         </div>
                                     </div>
                                     <div class="description-char">
@@ -578,7 +580,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8b-dlugi" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8b-dlugi">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -591,7 +593,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8c" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8c">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -610,7 +612,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8e-krotki" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8e-krotki">wynik: 0</span>
                                         </div>
                                     </div>
                                     <div class="description-char">
@@ -622,7 +624,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8e-dlugi" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8e-dlugi">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -636,7 +638,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8f-krotki" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8f-krotki">wynik: 0</span>
                                         </div>
                                     </div>
                                     <div class="description-char">
@@ -648,7 +650,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8f-dlugi" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8f-dlugi">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -662,7 +664,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8g-krotki" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8g-krotki">wynik: 0</span>
                                         </div>
                                     </div>
                                     <div class="description-char">
@@ -674,7 +676,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8g-dlugi" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8g-dlugi">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -693,7 +695,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8h-krotki" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8h-krotki">wynik: 0</span>
                                         </div>
                                     </div>
                                     <div class="description-char">
@@ -705,7 +707,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8h-dlugi" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8h-dlugi">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -718,7 +720,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p8i" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP8i">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -731,7 +733,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p9a" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP9a">wynik: 0</span>
                                         </div>
                                     </div>
                                     <div class="description-char">
@@ -742,7 +744,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p9b" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP9b">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -760,7 +762,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p9a" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -771,7 +773,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p9b" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -782,7 +784,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -800,7 +802,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p10" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP10">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -813,7 +815,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p11" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP11">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -826,7 +828,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p12" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP12">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -844,7 +846,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p13" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP13">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -857,7 +859,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p14" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP14">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -870,7 +872,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -889,7 +891,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p15-krotki" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP15-krotki">wynik: 0</span>
                                         </div>
                                     </div>
                                     <div class="description-char">
@@ -901,7 +903,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p15-dlugi" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP15-dlugi">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -915,7 +917,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p16" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP16">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -928,7 +930,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -946,7 +948,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p17" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP17">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -959,7 +961,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p18" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP18">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -972,7 +974,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p19" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP19">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -990,7 +992,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p20" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP20">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1004,7 +1006,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p20chodnik" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1017,7 +1019,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p21b" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1035,7 +1037,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p22" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1048,7 +1050,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p23" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1061,7 +1063,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1079,7 +1081,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p24" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1092,7 +1094,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="p25" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
@@ -1105,7 +1107,7 @@
                                         <div class="calc-item">
                                             <span id="">przelicznik</span>
                                             <input id="" type="number" min="0" value="0">
-                                            <span>wynik</span>
+                                            <span id="dodajP">wynik: 0</span>
                                         </div>
                                     </div>
                                 </div>
