@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&family=Righteous&display=swap");
+
 body {
   color: #ffff00;
   background-image: url(../images/dark-grey-terrazzo/dark-grey-terrazzo/dark-grey-terrazzo.png);
@@ -9,28 +10,23 @@ body {
   //background: #4b0082;
   // font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
-}
-// OPIS STRONY - HEADER
-header.description-site {
-  padding: 30px 0 30px 0;
-  color: #ffff00;
-  // font-family: "Nosifer", cursive;
-  font-family: "Bungee Inline", cursive;
-  // font-family: "Cabin Sketch", cursive;
-  //font-family: "Righteous", cursive;
-  text-align: center;
-  height: 300px;
-  font-size: 150%;
-  background: -webkit-gradient(
-    linear,
-    0% 15%,
-    99% 100%,
-    from(#ffff00),
-    to(#ff0000)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+  // OPIS STRONY - HEADER
+  header.description-site {
+    padding: 30px 0 30px 0;
+    color: #ffff00;
+    // font-family: "Nosifer", cursive;
+    font-family: "Bungee Inline", cursive;
+    // font-family: "Cabin Sketch", cursive;
+    //font-family: "Righteous", cursive;
+    text-align: center;
+    height: 300px;
+    font-size: 150%;
+    background: -webkit-gradient(linear, 0% 15%, 99% 100%, from(#ffff00), to(#ff0000));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 main {
   display: block;
@@ -40,6 +36,13 @@ main {
     margin: 0;
     section.result {
       background-color: rgba(255, 166, 158, 0.8);
+      form {
+        textarea {
+          height: 100px;
+          width: 500px;
+          display: none;
+        }
+      }
     }
 
     section.calculator {

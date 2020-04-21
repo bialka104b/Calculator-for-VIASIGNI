@@ -49,9 +49,10 @@
     <main class="container-fluid">
         <div class="row divInMain">
             <section class="result col-md-5">
-                <form name="form" action="script.php" method="POST">
-                    <textarea id="result-text" form="form" name="wynik"></textarea>
-                    <button form="form">Zapisz plik</button>
+                <form name="form" action="plik.py" method="POST" target="_blank">
+                    <textarea id="result-text" form="form" name="textcontent" value></textarea>
+                    <input type="submit" value="Submit" />
+
                 </form>
                 <div id="suma">
                     suma
@@ -225,7 +226,7 @@
                                             <img class="img-responsive" src="images/road/P-1a.jpg" alt="Znak P-1a">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="p1a-add-sum">0.04 x</span>
+                                            <span id="p1a-add-sum">0.04m² x</span>
                                             <input id="p1a" type="number" min="0" value="0">
                                             <span id="dodajP1a">
                                                 wynik: 0
@@ -240,7 +241,7 @@
                                             <img class="img-responsive" src="images/road/P-1b.jpg" alt="Znak P-1b">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">0.04 x</span>
+                                            <span id="">0.04m² x</span>
                                             <input id="p1b" type="number" min="0" value="0">
                                             <span id="dodajP1b">
                                                 wynik: 0
@@ -255,7 +256,7 @@
                                             <img class="img-responsive" src="images/road/P-1c.jpg" alt="Znak P-1c">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">0.12 x</span>
+                                            <span id="">0.12m² x</span>
                                             <input id="p1c" type="number" min="0" value="0">
                                             <span id="dodajP1c">
                                                 wynik: 0
@@ -275,7 +276,7 @@
                                             <img class="img-responsive" src="images/road/P-1d.jpg" alt="Znak P-1d">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">0.06 x</span>
+                                            <span id="">0.06m² x</span>
                                             <input id="p1d" type="number" min="0" value="0">
                                             <span id="dodajP1d">wynik: 0</span>
                                         </div>
@@ -288,7 +289,7 @@
                                             <img class="img-responsive" src="images/road/P-1e.jpg" alt="Znak P-1e">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">0.12 x</span>
+                                            <span id="">0.12m² x</span>
                                             <input id="p1e" type="number" min="0" value="0">
                                             <span id="dodajP1e">wynik: 0</span>
                                         </div>
@@ -301,7 +302,7 @@
                                             <img class="img-responsive" src="images/road/P-2a.jpg" alt="Znak P-2a">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">0.12 x</span>
+                                            <span id="">0.12m² x</span>
                                             <input id="p2a" type="number" min="0" value="0">
                                             <span id="dodajP2a">wynik: 0</span>
                                         </div>
@@ -314,7 +315,7 @@
                                             <img class="img-responsive" src="images/road/P-2b.jpg" alt="Znak P-2b">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">0.24 x</span>
+                                            <span id="">0.24m² x</span>
                                             <input id="p2b" type="number" min="0" value="0">
                                             <span id="dodajP2b">wynik: 0</span>
                                         </div>
@@ -333,7 +334,7 @@
                                             <img class="img-responsive" src="" alt="">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">m²</span>
                                             <input id="" type="number" min="0" value="0">
                                             <span id="dodajP">wynik: 0</span>
                                         </div>
@@ -351,7 +352,7 @@
                                             <img class="img-responsive" src="images/road/P-3a.jpg" alt="Znak P-3a">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">0.20 x</span>
+                                            <span id="">0.20m² x</span>
                                             <input id="p3a" type="number" min="0" value="0">
                                             <span id="dodajP3a">wynik: 0</span>
                                         </div>
@@ -364,7 +365,7 @@
                                             <img class="img-responsive" src="images/road/P-3b.jpg" alt="Znak P-3b">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">0.18 x</span>
+                                            <span id="">0.18m² x</span>
                                             <input id="p3b" type="number" min="0" value="0">
                                             <span id="dodajP3b">wynik: 0</span>
                                         </div>
@@ -377,7 +378,7 @@
                                             <img class="img-responsive" src="images/road/P-4.jpg" alt="Znak P-4">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">0.24 x</span>
+                                            <span id="">0.24m² x</span>
                                             <input id="p4" type="number" min="0" value="0">
                                             <span id="dodajP4">wynik: 0</span>
                                         </div>
@@ -395,7 +396,7 @@
                                             <img class="img-responsive" src="images/road/P-5.jpg" alt="Znak P-5">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.32m² x</span>
                                             <input id="p5" type="number" min="0" value="0">
                                             <span id="dodajP5">wynik: 0</span>
                                         </div>
@@ -408,7 +409,7 @@
                                             <img class="img-responsive" src="images/road/P-6.jpg" alt="Znak P-6">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.08m² x</span>
                                             <input id="p6" type="number" min="0" value="0">
                                             <span id="dodajP6">wynik: 0</span>
                                         </div>
@@ -421,7 +422,7 @@
                                             <img class="img-responsive" src="images/road/P-6a.jpg" alt="Znak P-6a">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.17m² x</span>
                                             <input id="p6a" type="number" min="0" value="0">
                                             <span id="dodajP6a">wynik: 0</span>
                                         </div>
@@ -439,7 +440,7 @@
                                             <img class="img-responsive" src="images/road/P-7a.jpg" alt="Znak P-7a">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.12m² x</span>
                                             <input id="p7a" type="number" min="0" value="0">
                                             <span id="dodajP7a">wynik: 0</span>
                                         </div>
@@ -452,7 +453,7 @@
                                             <img class="img-responsive" src="images/road/P-7b.jpg" alt="Znak P-7b">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.24m² x</span>
                                             <input id="p7b" type="number" min="0" value="0">
                                             <span id="dodajP7b">wynik: 0</span>
                                         </div>
@@ -465,7 +466,7 @@
                                             <img class="img-responsive" src="images/road/P-7c.jpg" alt="Znak P-7c">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.06m² x</span>
                                             <input id="p7c" type="number" min="0" value="0">
                                             <span id="dodajP7c">wynik: 0</span>
                                         </div>
@@ -478,7 +479,7 @@
                                             <img class="img-responsive" src="images/road/P-7d.jpg" alt="Znak P-7d">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.12m² x</span>
                                             <input id="p7d" type="number" min="0" value="0">
                                             <span id="dodajP7d">wynik: 0</span>
                                         </div>
@@ -502,7 +503,7 @@
                                             <img class="img-responsive" src="" alt="">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">m² x</span>
                                             <input id="" type="number" min="0" value="0">
                                             <span id="dodajP">wynik: 0</span>
                                         </div>
@@ -521,7 +522,7 @@
                                                 alt="Znak P-8a krótki">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">1.21m² x</span>
                                             <input id="p8a-krotki" type="number" min="0" value="0">
                                             <span id="dodajP8a-krotki">wynik: 0</span>
                                         </div>
@@ -533,7 +534,7 @@
                                                 alt="Znak P-8a długi">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">1.59m² x</span>
                                             <input id="p8a-dlugi" type="number" min="0" value="0">
                                             <span id="dodajP8a-dlugi">wynik: 0</span>
                                         </div>
@@ -547,7 +548,7 @@
                                                 alt="Znak P-8b krótki">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">1.49m² x</span>
                                             <input id="p8b-krotki" type="number" min="0" value="0">
                                             <span id="dodajP8b-krotki">wynik: 0</span>
                                         </div>
@@ -559,7 +560,7 @@
                                                 alt="Znak P-8b długi">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">1.94m² x</span>
                                             <input id="p8b-dlugi" type="number" min="0" value="0">
                                             <span id="dodajP8b-dlugi">wynik: 0</span>
                                         </div>
@@ -572,7 +573,7 @@
                                             <img class="img-responsive" src="images/road/P-8c.jpg" alt="Znak P-8c">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">2.87m² x</span>
                                             <input id="p8c" type="number" min="0" value="0">
                                             <span id="dodajP8c">wynik: 0</span>
                                         </div>
@@ -586,7 +587,7 @@
                                                 alt="Znak P-8d krótki">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">1.49m² x</span>
                                             <input id="p8d-krotki" type="number" min="0" value="0">
                                             <span id="dodajP8d-krotki">wynik: 0</span>
                                         </div>
@@ -598,7 +599,7 @@
                                                 alt="Znak P-8d długi">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">1.94m² x</span>
                                             <input id="p8d-dlugi" type="number" min="0" value="0">
                                             <span id="dodajP8d-dlugi">wynik: 0</span>
                                         </div>
@@ -617,7 +618,7 @@
                                                 alt="Znak P-8e krótki">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">2.19m² x</span>
                                             <input id="p8e-krotki" type="number" min="0" value="0">
                                             <span id="dodajP8e-krotki">wynik: 0</span>
                                         </div>
@@ -629,7 +630,7 @@
                                                 alt="Znak P-8e długi">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">2.72m² x</span>
                                             <input id="p8e-dlugi" type="number" min="0" value="0">
                                             <span id="dodajP8e-dlugi">wynik: 0</span>
                                         </div>
@@ -643,7 +644,7 @@
                                                 alt="Znak P-8f krótki">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">2.19m² x</span>
                                             <input id="p8f-krotki" type="number" min="0" value="0">
                                             <span id="dodajP8f-krotki">wynik: 0</span>
                                         </div>
@@ -655,7 +656,7 @@
                                                 alt="Znak P-8f długi">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">2.72m² x</span>
                                             <input id="p8f-dlugi" type="number" min="0" value="0">
                                             <span id="dodajP8f-dlugi">wynik: 0</span>
                                         </div>
@@ -669,7 +670,7 @@
                                                 alt="Znak P-8g krótki">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">2.47m² x</span>
                                             <input id="p8g-krotki" type="number" min="0" value="0">
                                             <span id="dodajP8g-krotki">wynik: 0</span>
                                         </div>
@@ -681,7 +682,7 @@
                                                 alt="Znak P-8g długi">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">3.07m² x</span>
                                             <input id="p8g-dlugi" type="number" min="0" value="0">
                                             <span id="dodajP8g-dlugi">wynik: 0</span>
                                         </div>
@@ -700,7 +701,7 @@
                                                 alt="Znak P-8h krótki">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">3.16m² x</span>
                                             <input id="p8h-krotki" type="number" min="0" value="0">
                                             <span id="dodajP8h-krotki">wynik: 0</span>
                                         </div>
@@ -712,7 +713,7 @@
                                                 alt="Znak P-8h długi">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">3.85m² x</span>
                                             <input id="p8h-dlugi" type="number" min="0" value="0">
                                             <span id="dodajP8h-dlugi">wynik: 0</span>
                                         </div>
@@ -725,7 +726,7 @@
                                             <img class="img-responsive" src="images/road/P-8i.jpg" alt="Znak P-8i">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">3.75m² x</span>
                                             <input id="p8i" type="number" min="0" value="0">
                                             <span id="dodajP8i">wynik: 0</span>
                                         </div>
@@ -738,7 +739,7 @@
                                             <img class="img-responsive" src="images/road/P-9a.jpg" alt="Znak P-9a">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">4.15m² x</span>
                                             <input id="p9a" type="number" min="0" value="0">
                                             <span id="dodajP9a">wynik: 0</span>
                                         </div>
@@ -749,7 +750,7 @@
                                             <img class="img-responsive" src="images/road/P-9b.jpg" alt="Znak P-9b">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">4.15m² x</span>
                                             <input id="p9b" type="number" min="0" value="0">
                                             <span id="dodajP9b">wynik: 0</span>
                                         </div>
@@ -767,7 +768,7 @@
                                         <h2>Znak P-9a</h2>
                                         <img class="img-responsive" src="images/road/P-9a.jpg" alt="Znak P-9a">
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">m² x</span>
                                             <input id="p9a" type="number" min="0" value="0">
                                             <span id="dodajP">wynik: 0</span>
                                         </div>
@@ -778,7 +779,7 @@
                                         <h2>Znak P-9b</h2>
                                         <img class="img-responsive" src="images/road/P-9b.jpg" alt="Znak P-9b">
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">m² x</span>
                                             <input id="p9b" type="number" min="0" value="0">
                                             <span id="dodajP">wynik: 0</span>
                                         </div>
@@ -789,7 +790,7 @@
                                         <h2>nazwa znaku</h2>
                                         <img class="img-responsive" src="" alt="">
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">m² x</span>
                                             <input id="" type="number" min="0" value="0">
                                             <span id="dodajP">wynik: 0</span>
                                         </div>
@@ -807,7 +808,7 @@
                                             <img class="img-responsive" src="images/road/P-10.jpg" alt="Znak P-10">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.5m² x</span>
                                             <input id="p10" type="number" min="0" value="0">
                                             <span id="dodajP10">wynik: 0</span>
                                         </div>
@@ -820,7 +821,7 @@
                                             <img class="img-responsive" src="images/road/P-11.jpg" alt="Znak P-11">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.5m² x</span>
                                             <input id="p11" type="number" min="0" value="0">
                                             <span id="dodajP11">wynik: 0</span>
                                         </div>
@@ -833,7 +834,7 @@
                                             <img class="img-responsive" src="images/road/P-12.jpg" alt="Znak P-12">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.5m² x</span>
                                             <input id="p12" type="number" min="0" value="0">
                                             <span id="dodajP12">wynik: 0</span>
                                         </div>
@@ -848,7 +849,7 @@
                                             <img class="img-responsive" src="images/road/P-13.jpg" alt="Znak P-13">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.2625m² x</span>
                                             <input id="p13" type="number" min="0" value="0">
                                             <span id="dodajP13">wynik: 0</span>
                                         </div>
@@ -861,7 +862,7 @@
                                             <img class="img-responsive" src="images/road/P-14.jpg" alt="Znak P-14">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.375m² x</span>
                                             <input id="p14" type="number" min="0" value="0">
                                             <span id="dodajP14">wynik: 0</span>
                                         </div>
@@ -874,7 +875,7 @@
                                             <img class="img-responsive" src="images/road/P-25.jpg" alt="Znak P-25">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.232m² x</span>
                                             <input id="p25" type="number" min="0" value="0">
                                             <span id="dodajP25">wynik: 0</span>
                                         </div>
@@ -899,7 +900,7 @@
                                                 alt="Znak P-15 krótki">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">1.325m² x</span>
                                             <input id="p15-krotki" type="number" min="0" value="0">
                                             <span id="dodajP15-krotki">wynik: 0</span>
                                         </div>
@@ -911,7 +912,7 @@
                                                 alt="Znak P-15 długi">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">3.423m² x</span>
                                             <input id="p15-dlugi" type="number" min="0" value="0">
                                             <span id="dodajP15-dlugi">wynik: 0</span>
                                         </div>
@@ -925,7 +926,7 @@
                                                 alt="Znak P-16 krótki">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">1.23m² x</span>
                                             <input id="p16-krotki" type="number" min="0" value="0">
                                             <span id="dodajP16-krotki">wynik: 0</span>
                                         </div>
@@ -937,7 +938,7 @@
                                                 alt="Znak P-16 długi">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">3.1m² x</span>
                                             <input id="p16-dlugi" type="number" min="0" value="0">
                                             <span id="dodajP16-dlugi">wynik: 0</span>
                                         </div>
@@ -950,7 +951,7 @@
                                             <img class="img-responsive" src="images/road/P-17.jpg" alt="Znak P-17">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">1.71m² x</span>
                                             <input id="p17" type="number" min="0" value="0">
                                             <span id="dodajP17">wynik: 0</span>
                                         </div>
@@ -961,7 +962,7 @@
                                             <img class="img-responsive" src="images/road/P-18.jpg" alt="Znak P-18">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.12m² x</span>
                                             <input id="p18" type="number" min="0" value="0">
                                             <span id="dodajP18">wynik: 0</span>
                                         </div>
@@ -991,7 +992,7 @@
                                             <img class="img-responsive" src="images/road/P-19.jpg" alt="Znak P-19">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.12m² x</span>
                                             <input id="p19" type="number" min="0" value="0">
                                             <span id="dodajP19">wynik: 0</span>
                                         </div>
@@ -1004,7 +1005,7 @@
                                             <img class="img-responsive" src="images/road/P-20.jpg" alt="Znak P-20">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.12m² x</span>
                                             <input id="p20" type="number" min="0" value="0">
                                             <span id="dodajP20">wynik: 0</span>
                                         </div>
@@ -1018,7 +1019,7 @@
                                                 alt="Znak P-20 na chodniku">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.12m² x</span>
                                             <input id="p20-chodnik" type="number" min="0" value="0">
                                             <span id="dodajP20Chodnik">wynik: 0</span>
                                         </div>
@@ -1031,7 +1032,7 @@
                                             <img class="img-responsive" src="images/road/P-21b.jpg" alt="Znak P-21">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.38m² x</span>
                                             <input id="p21a" type="number" min="0" value="0">
                                             <span id="dodajP21a">wynik: 0</span>
                                         </div>
@@ -1042,7 +1043,7 @@
                                             <img class="img-responsive" src="images/road/P-21b.jpg" alt="Znak P-21">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.38m² x</span>
                                             <input id="p21b" type="number" min="0" value="0">
                                             <span id="dodajP21b">wynik: 0</span>
                                         </div>
@@ -1061,7 +1062,7 @@
                                                 alt="Znak P-22 krótki">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">1.1m² x</span>
                                             <input id="p22-krotki" type="number" min="0" value="0">
                                             <span id="dodajP22-krotki">wynik: 0</span>
                                         </div>
@@ -1075,7 +1076,7 @@
                                                 alt="Znak P-22 długi">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">2.8m² x</span>
                                             <input id="p22-dlugi" type="number" min="0" value="0">
                                             <span id="dodajP22-dlugi">wynik: 0</span>
                                         </div>
@@ -1088,7 +1089,7 @@
                                             <img class="img-responsive" src="images/road/P-23.jpg" alt="Znak P-23">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.662m² x</span>
                                             <input id="p23" type="number" min="0" value="0">
                                             <span id="dodajP23">wynik: 0</span>
                                         </div>
@@ -1101,7 +1102,7 @@
                                             <img class="img-responsive" src="images/road/P-24.jpg" alt="Znak P-24">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">0.76m² x</span>
                                             <input id="p24" type="number" min="0" value="0">
                                             <span id="dodajP24">wynik: 0</span>
                                         </div>
@@ -1119,7 +1120,7 @@
                                             <img class="img-responsive" src="images/road/P-24.jpg" alt="Znak P-24">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">m² x</span>
                                             <input id="p24" type="number" min="0" value="0">
                                             <span id="dodajP">wynik: 0</span>
                                         </div>
@@ -1132,7 +1133,7 @@
                                             <img class="img-responsive" src="images/road/P-25.jpg" alt="Znak P-25">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">m² x</span>
                                             <input id="p25" type="number" min="0" value="0">
                                             <span id="dodajP">wynik: 0</span>
                                         </div>
@@ -1145,7 +1146,7 @@
                                             <img class="img-responsive" src="" alt="">
                                         </div>
                                         <div class="calc-item">
-                                            <span id="">przelicznik</span>
+                                            <span id="">m² x x</span>
                                             <input id="" type="number" min="0" value="0">
                                             <span id="dodajP">wynik: 0</span>
                                         </div>

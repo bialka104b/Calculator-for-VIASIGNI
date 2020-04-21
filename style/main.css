@@ -8,7 +8,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-header.description-site {
+body header.description-site {
   padding: 30px 0 30px 0;
   color: #ffff00;
   font-family: "Bungee Inline", cursive;
@@ -32,6 +32,12 @@ main .divInMain {
 
 main .divInMain section.result {
   background-color: rgba(255, 166, 158, 0.8);
+}
+
+main .divInMain section.result form textarea {
+  height: 100px;
+  width: 500px;
+  display: none;
 }
 
 main .divInMain section.calculator {
