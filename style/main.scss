@@ -2,66 +2,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,600&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Sriracha&display=swap");
 
+$linear: -webkit-gradient(linear, 0% 15%, 99% 100%, from(#ffff00), to(#ff0000));
 body {
   color: #ffff00;
-  background-image: url(../images/dark-grey-terrazzo/dark-grey-terrazzo/dark-grey-terrazzo.png);
+  background-image: url(../images/binding_dark/binding_dark/binding_dark.png);
   //background-image: url(../images/green-goblin.png);
   //background: #4b0082;
   // font-family: "Lato", sans-serif;
-  font-family: "Open Sans", sans-serif;
+  //font-family: "Open Sans", sans-serif;
+  font-family: "Comfortaa", cursive;
 
   // OPIS STRONY - HEADER
   header.description-site {
     padding: 30px 0 30px 0;
     color: #ffff00;
     // font-family: "Nosifer", cursive;
-    font-family: "Bungee Inline", cursive;
+    //font-family: "Bungee Inline", cursive;
     // font-family: "Cabin Sketch", cursive;
     //font-family: "Righteous", cursive;
+
     text-align: center;
-    height: 300px;
     font-size: 150%;
-    background: -webkit-gradient(linear, 0% 15%, 99% 100%, from(#ffff00), to(#ff0000));
+    background: $linear;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    h1 {
+      font-family: "Sriracha", cursive;
+    }
   }
+  
 }
 main {
   display: block;
   margin: 0;
   // min-height: 500px;
-  .divInMain {
+  .div-in-main {
     margin: 0;
     section.result {
-      background-color: rgba(255, 166, 158, 0.8);
+      text-align: center;
+      margin: 0 auto;
+      background-color: #ffff8d;
       form {
+        
         textarea {
           height: 100px;
-          width: 500px;
+          width: 300px;
+          max-width: 100%;
           display: none;
+          font-size: 15px;
+          text-align: center;
+          margin:0 auto;
         }
+        
       }
+      #suma {
+        color: black;
+      }
+
     }
 
     section.calculator {
       // sekcja kalkulatora
       display: block;
-      background-color: #ffff8d;
+      // background-color: #ffff8d;
       margin: 0;
-      padding: 15px;
+      // padding: 15px;
       border-radius: 3px;
       .card-header {
         padding: 0;
         ul.nav {
           margin: 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
           li.nav-item {
-            margin-bottom: 2px;
+            //background-image: url(../images/binding_dark/binding_dark/binding_dark.png);
+            background-color: #ffff8d;
+            margin: 2px;
+            font-family: "Sriracha", cursive;
             a {
               display: block;
               height: 100%;
               padding: 5px 8px;
+              text-align: center;
               &:hover {
                 border-color: #fffff0;
                 transition: all 1.2s ease;
@@ -72,12 +98,18 @@ main {
               text-decoration: none;
               color: black;
               line-height: 18px;
-              margin-right: 4px;
             }
-            .active {
-              background-color: #fffff0;
-              color: #ff0000;
+          }
+          li.nav-item  {
+            > a.active{
+              background-image: url(../images/binding_dark/binding_dark/binding_dark.png);
+              color: $linear;
               border: none;
+              border-radius: 0;
+              background: $linear;
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
             }
           }
         }
@@ -87,7 +119,7 @@ main {
         .tab-content {
           height: auto;
           //background: #fffff0;
-          background-image: url(../images/dark-grey-terrazzo/dark-grey-terrazzo/dark-grey-terrazzo.png);
+          background-image: url(../images/binding_dark/binding_dark/binding_dark.png);
           .tab-pane {
             div.row {
               margin: 0;
@@ -96,7 +128,12 @@ main {
                 div.description-char {
                   padding-top: 15px;
                   padding-bottom: 15px;
+
                   h2 {
+                    background: $linear;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                     text-align: center;
                   }
                   .div-img {
@@ -109,7 +146,7 @@ main {
                       height: 100%;
                       object-fit: cover;
                       object-position: bottom;
-                      border: 2px solid rgba(255, 166, 158, 1);
+                      //border: 2px solid rgba(255, 166, 158, 1);
                     }
                   }
                   .div-img-square {
@@ -132,10 +169,22 @@ main {
                     margin-right: auto;
                     margin-left: auto;
                   }
+
                   div.calc-item {
                     text-align: center;
+                    background: $linear;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                     input {
                       width: 50px;
+                      background-color: rgba(0, 0, 0, 0);
+                      border-bottom: 2px solid #ffff00;
+                      border-right: 2px solid #ffff00;
+                      border-left: 0;
+                      border-top: 0;
+                      outline: 0;
+                      text-align: center;
                     }
                   }
                 }
@@ -158,4 +207,21 @@ main {
 }
 footer {
   clear: both;
+  font-weight: 900;
+  background: $linear;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#tymczasowyDisplayNone {
+  @media (max-width: 843px) {
+    display:none;
+  }
+}
+
+html {
+  @media (max-width:900px){
+    font-size: 0.8em;
+  }
 }
